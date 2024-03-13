@@ -1,9 +1,18 @@
 def cetak_table_perkalian(number):
     pattern = ""
+    for i in range(number):
+        for j in range(number):
+            # bilangan = (i+1) * (j+1)
+            # print(bilangan, end=" ")
+            bilangan = str((i+1) * (j+1))
+            pattern += " " + bilangan + ""
+        # print()
+        pattern += "" * number + "\n"
+
     return pattern
 
 if __name__ == '__main__':
-    cetak_table_perkalian(9)
+    print(cetak_table_perkalian(9))
     """
      1 2 3 4 5 6 7 8 9
      2 4 6 8 10 12 14 16 18
